@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(60, 225, 195, 0.545);
+  }
+
+header {
+  height: 10vw;
+  background-color: rgba(60, 225, 195, 1.000);
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+
+}
+
+header > section > img {
+  width: 5vw;
+  height: auto;
+  top: 2.8vw;
+  position: fixed;
+  border-radius: 0.6vw;
+  border-color: wheat;
+}
+
+header > section > article > p {
+  position: fixed;
+  top: 5vw;
+  left: 8vw;
+  
+}
+
+header > section > article > h2 {
+  position: fixed;
+  top: 2vw;
+  left: 7vw;
+
+}
+
+
+header > nav {
+  position: fixed;
+  top: 5vw;
+  right: 2vw;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: #333;
+    padding-right: 0.6vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+main {
+   margin-left: 4vw;
+   margin-right: 4vw;
+   margin-top: 15vw;
+  
+}
+h1 {
+  margin-left: 1vw;
+}
+main > section > article > img {
+  width: 100%; /* Ensure the image doesn't exceed its container */
+  height: 36vw; /* Maintain aspect ratio */
+
+}
+
+main > section > article > p {
+  margin: 0; /* Remove default margin for the paragraphs */
+}
+
+.main-1 {
+  display: flex; /* Use flexbox to make the articles side by side */
+  align-items: center;/* Vertically center the content */
+  padding-bottom: 3vw;
+}
+
+.main-2 {
+  display: flex; /* Use flexbox to make the articles side by side */
+  align-items: center;/* Vertically center the content */
+  padding-bottom: 3vw;
+}
+
+.main-3 {
+  display: flex; /* Use flexbox to make the articles side by side */
+  align-items: center;/* Vertically center the content */
+  padding-bottom: 3vw;
+}
+
+
+.p1 {
+  padding-right: 2.1vw; /* Add padding for spacing */
+
+ 
+}
+.p2 {
+ padding-left: 2.1vw; /* Add padding for spacing */
+ display: flex;
+ flex-direction: column;
+}
+
+footer {
+  background-color: rgba(60, 225, 195, 1.000);
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+ 
+}
+
+footer > h3 {
+  display: inline-block;
+  margin-left: 64vw;
+}
+
+
+
+footer > p {
+  text-align: center;
+  margin-bottom: 1.5vw;
+  border-top: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+footer > nav {
+  
+  display: inline-block;
+  position: static;
+
+}
+
+
+footer > nav > a {
+  margin-right: 0.7vw;
+  margin-left: 1.5vw;
+}
+
