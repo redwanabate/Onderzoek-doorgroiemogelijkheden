@@ -2,98 +2,129 @@ body {
     background-color: rgba(60, 225, 195, 0.545);
   }
 
-header {
-  height: 10vw;
-  background-color: rgba(60, 225, 195, 1.000);
-  position: fixed;
-  top:0;
-  left: 0;
-  width:100%;
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar {
+    background-color: rgba(60, 225, 195, 1.000);
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
 
 }
 
-header > section > img {
-  width: 5vw;
-  height: auto;
-  top: 2.8vw;
-  position: fixed;
-  border-radius: 0.6vw;
-  border-color: wheat;
+div img {
+    width: 4vw;
+    height: auto;
+    border-radius: 0.8vw;
 }
 
-header > section > article > p {
-  position: fixed;
-  top: 5vw;
-  left: 8vw;
-  
+#h2 {
+    position: fixed;
+    top: 1.5vw;
+    left: 6vw;
 }
 
-header > section > article > h2 {
-  position: fixed;
-  top: 2vw;
-  left: 7vw;
-
+#parag {
+    position: fixed;
+    top: 4vw;
+    left: 7.5vw;
+    font-style: italic;
 }
 
 
-header > nav {
-  position: fixed;
-  top: 5vw;
-  right: 2vw;
+.menu-bar ul {
+    list-style: none;
+    display: flex;
 }
 
-header > nav > a {
+.menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu-bar ul li a {
     text-decoration: none;
-    color: #333;
-    padding-right: 0.6vw;
-    font-size: 1.5vw;
-    font-weight: bold;
+    color: black;
+    font-size: 20px;
 }
+
+.menu-bar ul li a:hover {
+    color: blue;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgba(60, 225, 195, 1.000);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    padding: 10px;
+    width: 250px;
+}
+
 main {
    margin-left: 4vw;
    margin-right: 4vw;
-   margin-top: 15vw;
+   padding-top: 13vw;
   
 }
 h1 {
-  margin-left: 1vw;
+  margin-left: 30vw;
 }
 main > section > article > img {
-  width: 100%; /* Ensure the image doesn't exceed its container */
-  height: 36vw; /* Maintain aspect ratio */
+  width: 100%; 
+  height: 36vw; 
 
 }
 
 main > section > article > p {
-  margin: 0; /* Remove default margin for the paragraphs */
+  margin: 0; 
 }
 
 .main-1 {
-  display: flex; /* Use flexbox to make the articles side by side */
-  align-items: center;/* Vertically center the content */
+  display: flex; 
+  align-items: center;
   padding-bottom: 3vw;
 }
 
 .main-2 {
-  display: flex; /* Use flexbox to make the articles side by side */
-  align-items: center;/* Vertically center the content */
+  display: flex; 
+  align-items: center;
   padding-bottom: 3vw;
 }
 
 .main-3 {
-  display: flex; /* Use flexbox to make the articles side by side */
-  align-items: center;/* Vertically center the content */
+  display: flex; 
+  align-items: center;
   padding-bottom: 3vw;
 }
 
 
 .p1 {
-  padding-right: 2.1vw; /* Add padding for spacing */
+  padding-right: 2.1vw; 
 
  
 }
 .p2 {
- padding-left: 2.1vw; /* Add padding for spacing */
+ padding-left: 2.1vw; 
  display: flex;
  flex-direction: column;
 }
